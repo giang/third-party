@@ -7,7 +7,7 @@ cd src
 PACKAGE=pcre-8.43
 
 if [ ! -d $PACKAGE ]; then
-    wget ftp://ftp.pcre.org/pub/pcre/$PACKAGE.tar.gz
+    wget -O $PACKAGE.tar.gz https://sourceforge.net/projects/pcre/files/pcre/$PACKAGE/pcre-$PACKAGE.tar.gz/download
 fi
 tar xvfz $PACKAGE.tar.gz
 rm $PACKAGE.tar.gz
