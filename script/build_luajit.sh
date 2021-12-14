@@ -6,6 +6,9 @@ CUR_PREFIX=`pwd`
 cd src
 
 cd luajit
+git reset --hard
+git pull
+git checkout v2.1.0-beta3
 
 make install PREFIX=$CUR_PREFIX CFLAGS="-fPIC -O3" 
 
